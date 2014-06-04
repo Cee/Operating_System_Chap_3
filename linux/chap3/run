@@ -1,0 +1,7 @@
+make everything
+sudo mount a.img /media/floppy
+sudo cp -fv boot/loader.bin /media/floppy/
+sudo cp -fv kernel.bin /media/floppy
+make realclean
+bochs -f bochsrc
+sudo umount /media/floppy
